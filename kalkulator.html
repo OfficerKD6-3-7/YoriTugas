@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Membuat Kalkulator</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Press+Start+2P&display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="screen-wrapper">
+        <div id="screen">
+          <div id="expression"><span id="typed-cursor" /></div>
+          <div id="result">0</div>
+        </div>
+      </div>
+      <table class="keys">
+        <tbody>
+          <tr>
+            <td class="red key" data-func="clear">C</td>
+            <td class="red key" data-func="cancel_entry">CE</td>
+            <td class="gray key power" data-token="op_pow">x<span>y</span></td>
+            <td class="gray key divide" data-token="op_divide">÷</td>
+          </tr>
+          <tr>
+            <td class="blue key" data-token="num_7">7</td>
+            <td class="blue key" data-token="num_8">8</td>
+            <td class="blue key" data-token="num_9">9</td>
+            <td class="gray key" data-token="op_multiply">×</td>
+          </tr>
+          <tr>
+            <td class="blue key" data-token="num_4">4</td>
+            <td class="blue key" data-token="num_5">5</td>
+            <td class="blue key" data-token="num_6">6</td>
+            <td class="gray key substract" data-token="op_substract">–</td>
+          </tr>
+          <tr>
+            <td class="blue key" data-token="num_1">1</td>
+            <td class="blue key" data-token="num_2">2</td>
+            <td class="blue key" data-token="num_3">3</td>
+            <td class="gray key add" data-token="op_add" rowspan="2">+</td>
+          </tr>
+          <tr>
+            <td class="blue key" data-token="num_dot">.</td>
+            <td class="blue key" data-token="num_0">0</td>
+            <td class="blue key eval" data-func="eval">=</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="footer">JOYKO CC-23</p>
+    </div>
+    <script src="./kalkulator.js"></script>
+  </body>
+</html>
